@@ -78,6 +78,7 @@ Most of the data provided by udacity was center of the lane driving, displayed b
 
 
 To remedy this, most of the data I recorded involved correcting for when the vehicle was too close to one side of the lane like in the two images below.
+
 ![left][image3]
 ![right][image4]
 
