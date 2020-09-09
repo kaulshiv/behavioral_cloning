@@ -82,7 +82,7 @@ To remedy this, most of the data I recorded involved correcting for when the veh
 ![right][image4]
 
 
-I also collected data driving both clockwise and counter-clockwise around the track. After accumulating all of my own images with Udacity's images, I performed a final augmentation steps programmatically (see lines 95-109 in `model.py`). These involved flipping each image over the vertical axis, then including images from the right and left cameras (and flipping those images as well). All together, this produced a 6x increase in the data.
+I also collected data driving both clockwise and counter-clockwise around the track. After accumulating all of my own images with Udacity's images, I performed a final augmentation steps programmatically (see lines 94-108 in `model.py`). These involved flipping each image over the vertical axis, then including images from the right and left cameras (and flipping those images as well). All together, this produced a 6x increase in the data.
 
 I used a training-validation split of `80`-`20`. The final size of the training dataset after augmentation was `74304` images, while the validation set was `18582` images. Each image had dimensions `(160,320,3)`.
 

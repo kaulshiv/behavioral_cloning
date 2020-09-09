@@ -30,7 +30,6 @@ def get_samples():
         filenames of training samples
     validation_samples : list of strings
         filenames of validation samples
-
     """
     samples = []
 
@@ -151,12 +150,18 @@ def train_and_save_model(model, train_samples, validation_samples):
     """
     Train and save model. Save picture of loss curves.
 
-    Params: n/a
+    Params: 
     ----------
+    model: keras.Model()
+        model to train!
+    train_samples : list of strings
+        filenames of training samples
+    validation_samples : list of strings
+        filenames of validation samples
 
     Returns
     ----------
-
+    n/a
     """
     batch_size = 32
     train_generator = generator(train_samples, batch_size=batch_size)
